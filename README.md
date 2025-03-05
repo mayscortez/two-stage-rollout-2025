@@ -22,19 +22,31 @@ Supplementary Material for "Analysis of Two-Stage Rollout Designs with Clusterin
 
 # Folders and Files
 
-- Amazon:
+## Amazon
+
     - Experiments: contains .json files with experiment parameters for Amazon network; also has data files (.pkl) generated in experiments
     - Network: data files for the network, plus some .py files for preparing the network data; the main important file is `data.pkl` which is used in the experiment files and contains a representation of the Amazon network as well as some clusterings (created by `prepare_data.py`); the file `deg_hist.py` generates a degree histrogram for the network.
+    - Leskovec, J., Adamic, L. A., & Huberman, B. A. (2007). The dynamics of viral marketing. ACM Transactions on the Web (TWEB), 1(1), 5-es.
+    - Leskovec, J. and Krevl, A. (2014). SNAP Datasets: Stanford large network dataset collection. http://snap.stanford.edu/data.
 
-- BlogCatalog:
+## BlogCatalog
+
     - Experiments: contains .json files with experiment parameters for BlogCatalog network; also has data files (.pkl) generated in experiments
     - Network: data files for the network, plus some .py files for preparing the network data; the main important file is `data.pkl` which is used in the experiment files and contains a representation of the BlogCatalog network as well as some clusterings (created by `prepare_data.py`); the file `deg_hist.py` generates a degree histrogram for the network.
+    - Rossi, R., & Ahmed, N. (2015, March). The network data repository with interactive graph analytics and visualization. In Proceedings of the AAAI conference on artificial intelligence (Vol. 29, No. 1).
+    - Tang, L., & Liu, H. (2009, June). Relational learning via latent social dimensions. In Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining (pp. 817-826).
+    - Tang, L., & Liu, H. (2009, November). Scalable learning of collective behavior based on sparse social dimensions. In Proceedings of the 18th ACM conference on Information and knowledge management (pp. 1107-1116).
 
-- Email:
+## Email
+
     - Experiments: contains .json files with experiment parameters for Email network; also has data files (.pkl) generated in experiments
     - Network: data files for the network, plus some .py files for preparing the network data; the main important file is `data.pkl` which is used in the experiment files and contains a representation of the Email network as well as some clusterings (created by `prepare_data.py`); the file `deg_hist.py` generates a degree histrogram for the network.
+    - Leskovec, J. and Krevl, A. (2014). SNAP Datasets: Stanford large network dataset collection. http://snap.stanford.edu/data.
+    - Leskovec, J., Kleinberg, J., & Faloutsos, C. (2007). Graph evolution: Densification and shrinking diameters. ACM transactions on Knowledge Discovery from Data (TKDD), 1(1), 2-es.
+    - Yin, H., Benson, A. R., Leskovec, J., & Gleich, D. F. (2017, August). Local higher-order graph clustering. In Proceedings of the 23rd ACM SIGKDD international conference on knowledge discovery and data mining (pp. 555-564).
 
-- experiment_python_scripts:
+## experiment_python_scripts
+
     - Scripts to run experiments and plot the results or otherwise scripts to create tables/figures from the paper
     - `interpolation_figure.py`: Creates Figure 1: Visualization of extrapolated polynomials
     - `run_compare_estimators_experiment.py`: used to create data for Figures 2, 8, 9, 10, and 13 (compare bias/variance or MSE of different estimators)
@@ -58,6 +70,8 @@ Supplementary Material for "Analysis of Two-Stage Rollout Designs with Clusterin
 - found in `experiment_functions.py` (see functions pom_ugander_yin, _outcomes, and homophily_effects)
 - for no homophily, set $b=0$ in pom_ugander_yin function
 - for some homophily, set $b$ in pom_ugander_yin function to the desired value, e.g. $b=0.5$
+
+Ugander, J., & Yin, H. (2023). Randomized graph cluster randomization. Journal of Causal Inference, 11(1), 20220014.
 
 # Example: Create Figure 2
 
