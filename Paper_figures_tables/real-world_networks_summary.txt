@@ -1,0 +1,94 @@
+From: 
+
+@inproceedings{network_repo,
+     title={The Network Data Repository with Interactive Graph Analytics and Visualization},
+     author={Ryan A. Rossi and Nesreen K. Ahmed},
+     booktitle={AAAI},
+     url={https://networkrepository.com},
+     year={2015}
+}
+
+
+BlogCatalog:
+https://networkrepository.com/soc-BlogCatalog-ASU.php
+
+Undirected Graph
+vertices = bloggers                       (10,312)
+edges = social network connections        (333,983)
+communities = topic interests             (39)
+min degree = 1
+max degree = 3,992
+avg degree = 65
+* bloggers can belong to multiple communities
+pre-processing: add self-loops 
+
+@inproceedings{tang2009scalable,
+  title={Scalable learning of collective behavior based on sparse social dimensions},
+  author={Tang, Lei and Liu, Huan},
+  booktitle={Proceedings of the 18th ACM conference on Information and knowledge management},
+  pages={1107--1116},
+  year={2009}
+}
+
+------------------------------------------------------------------------------------------------
+
+Amazon:
+https://snap.stanford.edu/data/amazon-meta.html
+
+Directed Graph
+vertices = products (DVDs)          (19,828) -> (14,436)
+edges = co-purchases                (70,832)
+communities = product category      (13,591)
+min degree = 1
+max degree = 247
+avg degree = 5
+pre-processing: restrict data to DVDs, restrict to the largest connected component, add self-loops,
+
+@article{leskovec2007dynamics,
+  title={The dynamics of viral marketing},
+  author={Leskovec, Jure and Adamic, Lada A and Huberman, Bernardo A},
+  journal={ACM Transactions on the Web (TWEB)},
+  volume={1},
+  number={1},
+  pages={5--es},
+  year={2007},
+  publisher={ACM New York, NY, USA}
+}
+
+Email:
+https://snap.stanford.edu/data/email-Eu-core.html
+
+Directed Graph
+vertices = researchers              (1,005)
+edges = sent emails                 (25,571)
+communities = departments           (42)
+min degree = 1
+max degree = 334
+avg degree = 25
+each user in exactly one community
+pre-processing: add self-loops 
+
+@article{leskovec2007graph,
+  title={Graph evolution: Densification and shrinking diameters},
+  author={Leskovec, Jure and Kleinberg, Jon and Faloutsos, Christos},
+  journal={ACM transactions on Knowledge Discovery from Data (TKDD)},
+  volume={1},
+  number={1},
+  pages={2--es},
+  year={2007},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{yin2017local,
+  title={Local higher-order graph clustering},
+  author={Yin, Hao and Benson, Austin R and Leskovec, Jure and Gleich, David F},
+  booktitle={Proceedings of the 23rd ACM SIGKDD international conference on knowledge discovery and data mining},
+  pages={555--564},
+  year={2017}
+}
+
+
+
+
+
+

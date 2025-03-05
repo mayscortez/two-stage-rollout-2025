@@ -1,0 +1,47 @@
+Amazon Network, beta = 2, 'graph' clustering
+Var: 0.19263654309356254, cut effect: 0.07593820361764392, cuts: 7670
+q_min = 0.3334118042710611, MSE(q_min) = 0.007412042244559447
+Amazon Network, beta=2, 'covariate' clustering
+Var: 0.0343805798885548, cut effect: 0.36096208515187334, cuts: 41243
+q_min = 0.1250031521876182, MSE(q_min) = 0.02912185769714562
+
+Amazon Network, beta = 3, 'graph' clustering
+Var: 0.24875867571658983, cut effect: 0.12577195499532445, cuts: 7670
+q_min = 1.0004036326942483, MSE(q_min) = 0.023693062994100178
+Amazon Network, beta=3, 'covariate' clustering
+Var: 0.04264447173879756, cut effect: 0.5436231778652572, cuts: 41243
+q_min = 0.5002018163471241, MSE(q_min) = 0.2204229059289694
+
+##########################################################################
+
+BlogCatalog Network, beta = 2, 'graph' clustering
+Var: 0.6969406578379417, cut effect: 0.47067986806790874, cuts: 604504
+q_min = 0.5000969932104753, MSE(q_min) = 0.2604052967268783
+BlogCatalog Network, beta=2, 'covariate' clustering
+Var: 0.059903756752374394, cut effect: 0.48626458280156504, cuts: 643080
+q_min = 0.5000969932104753, MSE(q_min) = 0.19027035715178475
+
+BlogCatalog Network, beta = 3, 'graph' clustering
+Var: 0.7033766714423827, cut effect: 0.7171294707063969, cuts: 604504
+q_min = 1.0001939864209506, MSE(q_min) = 0.6098521535489954
+BlogCatalog Network, beta=3, 'covariate' clustering
+Var: 0.059877701503013345, cut effect: 0.7344552453780007, cuts: 643080
+q_min = 1.0001939864209506, MSE(q_min) = 0.486401074173021
+
+##########################################################################
+
+Email Network, beta = 2, 'graph' clustering
+Var: 0.39874920730954894, cut effect: 0.44175165733256594, cuts: 21756
+q_min = 0.5025, MSE(q_min) = 0.23225627112205546
+Email Network, beta=2, 'covariate' clustering
+Var: 0.39845129146475633, cut effect: 0.37228416947034937, cuts: 16284
+q_min = 1.005, MSE(q_min) = 0.13262607093359283
+
+Email Network, beta = 3, 'graph' clustering
+Var: 0.41701637124408614, cut effect: 0.6861869728913734, cuts: 21756
+q_min = 1.005, MSE(q_min) = 0.4831147346417115
+Email Network, beta=3, 'covariate' clustering
+Var: 0.41220779926961126, cut effect: 0.5907258648991871, cuts: 16284
+q_min = 1.005, MSE(q_min) = 0.2884958247041026
+
+##########################################################################

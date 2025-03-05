@@ -1,0 +1,14 @@
+{ 
+    "name" : "compare_estimators", 
+    "network" : "Email",
+    "input" : "Network/data.pkl",
+    "vary" : {
+        "beta" : [1,2,3]
+    },
+    "fix" : {
+        "nc" : 42,
+        "q" : 0.5
+    },
+    "replications" : 1000,
+    "gamma" : 0.25
+}

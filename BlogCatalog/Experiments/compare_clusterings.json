@@ -1,0 +1,13 @@
+{ 
+    "name" : "compare_clusterings", 
+    "network" : "BlogCatalog",
+    "input" : "Network/data.pkl",
+    "vary" : {
+        "nc" : [50],
+        "beta" : [2,3]
+    },
+    "fix" : {
+        "p" : 0.1
+    },
+    "replications" : 1000
+}

@@ -1,0 +1,13 @@
+{ 
+    "name" : "compare_clusterings", 
+    "network" : "Email",
+    "input" : "Network/data.pkl",
+    "vary" : { 
+        "beta" : [2, 3]
+    },
+    "fix" : {
+        "p" : 0.1,
+        "nc" : 42
+    },
+    "replications" : 1000
+}
