@@ -1,0 +1,13 @@
+{ 
+    "name" : "compare_clusterings", 
+    "network" : "Amazon",
+    "input" : "Network/data.pkl",
+    "vary" : {
+        "nc" : [250],
+        "beta" : [2]
+    },
+    "fix" : {
+        "p" : 0.1
+    },
+    "replications" : 800
+}
