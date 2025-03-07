@@ -1,0 +1,14 @@
+{ 
+    "name" : "compare_estimators", 
+    "network" : "Amazon",
+    "input" : "Network/data.pkl",
+    "vary" : {
+        "beta" : [2]
+    },
+    "fix" : {
+        "q" : 0.5,
+        "nc" : 250
+    },
+    "replications" : 800,
+    "gamma" : 0.25
+}
