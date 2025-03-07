@@ -1,7 +1,7 @@
 # Used to create data for Figures 2,8,9,10, and 13
 import json
 import pickle
-from experiment_functions import *
+from experiment_python_scripts.experiment_functions import *
 from itertools import product
 from joblib import Parallel, delayed 
 
@@ -137,7 +137,7 @@ def run_experiment(G,Cls,fixed,varied,r,gamma):
         for nc,q in product(ncs,qs):
             print("nc = {}, q = {}".format(nc, q))
             # Run experiments in parallel across different treatment probabilities
-            for (p,results) in Parallel(n_jobs=-1, verbose=10)(delayed(lambda p : estimate_two_stage(fY,G,Cls[nc],n,p,r,beta,gamma,q))(p) for p in np.linspace(0.1,0.5,16)): #24
+            for (p,results) in Parallel(n_jobs=-2, verbose=10)(delayed(lambda p : estimate_two_stage(fY,G,Cls[nc],n,p,r,beta,gamma,q))(p) for p in np.linspace(0.1,0.5,16)): #24
                 nu = int(p*n/q)
                 data["p"] += [p]*len(results)
                 if "beta" in varied: data["beta"] += [beta]*len(results)
